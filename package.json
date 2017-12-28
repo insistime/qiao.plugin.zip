@@ -1,0 +1,28 @@
+{
+  "name": "qiao.plugin.zip",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "zip and unzip by adm-zip",
+  "keywords": [
+    "zip",
+    "unzip",
+    "folder",
+    "file",
+    "adm-zip"
+  ],
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "adm-zip": "^0.4.7"
+  },
+  "author": {
+    "name": "qiaowenbin",
+    "email": "npm@insistime.com",
+    "url": "http://insistime.com"
+  },
+  "homepage": "http://insistime.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uikoo9/qiao.plugin.zip.git"
+  }
+}
