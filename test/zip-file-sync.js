@@ -2,15 +2,16 @@
 
 var qiaoPluginZip = require('../lib/qiao.plugin.zip');
 
-function test(){
+var test = async function(){
 	var sourceFile	= 'd:/test.js';
 	var destZip		= 'd:/test22.zip';
 	
-	qiaoPluginZip.zipFile(sourceFile, destZip, function(err, msg){
-		if(err) throw err;
-		
+	try{
+		var msg = await qiaoPluginZip.zipFileSync(sourceFile, destZip);
 		console.log(msg);
-	});
-}
+	}catch(e){
+		console.log(e);
+	}
+};
 
 test();

@@ -7,6 +7,6 @@ function test(){
 	var destFolder	= 'd:/test2/';
 	
 	qiaoPluginZip.unzip(zipFile, destFolder);
-};
+}
 
 test();

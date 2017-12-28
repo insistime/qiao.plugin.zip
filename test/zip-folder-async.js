@@ -11,6 +11,6 @@ function test(){
 		
 		console.log(msg);
 	});
-};
+}
 
 test();
