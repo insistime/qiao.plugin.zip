@@ -109,3 +109,4 @@ npm install qiao.plugin.zip
 5. zip file sync
 6. zip folder sync
 7. readme.md
+8. add index.js
