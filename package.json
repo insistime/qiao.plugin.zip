@@ -13,7 +13,8 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "adm-zip": "^0.4.7"
+    "adm-zip": "^0.4.7",
+    "archiver": "^2.1.0"
   },
   "author": {
     "name": "qiaowenbin",
