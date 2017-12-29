@@ -14,7 +14,7 @@ npm install qiao.plugin.zip
 # unzip
 	'use strict';
 	
-	var qiaoPluginZip = require('../lib/qiao.plugin.zip');
+	var qiaoPluginZip = require('qiao.plugin.zip');
 	
 	function test(){
 		var zipFile 	= 'd:/test1.zip';
@@ -28,7 +28,7 @@ npm install qiao.plugin.zip
 # zip file sync
 	'use strict';
 	
-	var qiaoPluginZip = require('../lib/qiao.plugin.zip');
+	var qiaoPluginZip = require('qiao.plugin.zip');
 	
 	var test = async function(){
 		var sourceFile	= 'd:/test.js';
@@ -47,7 +47,7 @@ npm install qiao.plugin.zip
 # zip folder sync
 	'use strict';
 	
-	var qiaoPluginZip = require('../lib/qiao.plugin.zip');
+	var qiaoPluginZip = require('qiao.plugin.zip');
 	
 	var test = async function(){
 		var sourceFolder= 'd:/test/';
@@ -66,7 +66,7 @@ npm install qiao.plugin.zip
 # zip file async
 	'use strict';
 	
-	var qiaoPluginZip = require('../lib/qiao.plugin.zip');
+	var qiaoPluginZip = require('qiao.plugin.zip');
 	
 	function test(){
 		var sourceFile	= 'd:/test.js';
@@ -84,7 +84,7 @@ npm install qiao.plugin.zip
 # zip folder async
 	'use strict';
 	
-	var qiaoPluginZip = require('../lib/qiao.plugin.zip');
+	var qiaoPluginZip = require('qiao.plugin.zip');
 	
 	function test(){
 		var sourceFolder= 'd:/test/';
