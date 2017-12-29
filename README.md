@@ -101,6 +101,9 @@ npm install qiao.plugin.zip
 
 # version
 ---
+### 0.0.2.20171229
+1. 修改readme.md的代码示例
+
 ### 0.0.1.20171228
 1. 初始化项目
 2. unzip by adm-zip
