@@ -99,10 +99,18 @@ npm install qiao.plugin.zip
 	
 	test();
 
+# also in cli
+	npm install -g qiao.plugin.zip
+
+	qiao-plugin-zip unzip d:/test.zip d:/test
+	qiao-plugin-zip zipfile d:/test.js d:/test1.zip
+	qiao-plugin-zip zipfolder d:/test/ d:/test2.zip
+
 # version
 ---
 ### 0.0.3.20180112
 1. add qiao-plugin-zip cli
+2. npm publish 0.0.9
 
 ### 0.0.2.20171229
 1. 修改readme.md的代码示例
