@@ -101,6 +101,9 @@ npm install qiao.plugin.zip
 
 # version
 ---
+### 0.0.3.20180112
+1. add qiao-plugin-zip cli
+
 ### 0.0.2.20171229
 1. 修改readme.md的代码示例
 
