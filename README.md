@@ -1,9 +1,7 @@
 # qiao.plugin.zip
----
 nodejs zip and unzip tool
 
 # install
----
 npm install qiao.plugin.zip
 
 # dependencies
@@ -107,7 +105,6 @@ npm install qiao.plugin.zip
 	qiao-plugin-zip zipfolder d:/test/ d:/test2.zip
 
 # version
----
 ### 0.0.3.20180112
 1. add qiao-plugin-zip cli
 2. npm publish 0.0.9
