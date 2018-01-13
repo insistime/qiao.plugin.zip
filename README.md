@@ -105,6 +105,9 @@ npm install qiao.plugin.zip
 	qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 
 # version
+### 0.0.4.20180113
+1. 代码优化
+
 ### 0.0.3.20180112
 1. add qiao-plugin-zip cli
 2. npm publish 0.0.9
