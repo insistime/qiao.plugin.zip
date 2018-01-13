@@ -30,7 +30,7 @@ npm install qiao.plugin.zip
 	
 	var test = async function(){
 		var sourceFile	= 'd:/test.js';
-		var destZip		= 'd:/test22.zip';
+		var destZip	= 'd:/test22.zip';
 		
 		try{
 			var msg = await qiaoPluginZip.zipFileSync(sourceFile, destZip);
@@ -48,7 +48,7 @@ npm install qiao.plugin.zip
 	var qiaoPluginZip = require('qiao.plugin.zip');
 	
 	var test = async function(){
-		var sourceFolder= 'd:/test/';
+		var sourceFolder	= 'd:/test/';
 		var destZip		= 'd:/test24.zip';
 		
 		try{
@@ -68,7 +68,7 @@ npm install qiao.plugin.zip
 	
 	function test(){
 		var sourceFile	= 'd:/test.js';
-		var destZip		= 'd:/test22.zip';
+		var destZip	= 'd:/test22.zip';
 		
 		qiaoPluginZip.zipFile(sourceFile, destZip, function(err, msg){
 			if(err) throw err;
