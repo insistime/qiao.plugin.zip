@@ -2,7 +2,7 @@
 
 var qiaoPluginZip = require('../lib/qiao.plugin.zip');
 
-function test(){
+var test = function(){
 	var zipFile 	= 'd:/test1.zip';
 	var destFolder	= 'd:/test2/';
 	
@@ -16,6 +16,6 @@ function test(){
 	
 	console.log();
 	console.log('unzip success!');
-}
+};
 
 test();

@@ -2,7 +2,7 @@
 
 var qiaoPluginZip = require('../lib/qiao.plugin.zip');
 
-function test(){
+var test = function(){
 	var sourceFolder= 'd:/test/';
 	var destZip		= 'd:/test03.zip';
 	
@@ -18,6 +18,6 @@ function test(){
 		console.log();
 		console.log(msg);
 	});
-}
+};
 
 test();
