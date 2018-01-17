@@ -30,8 +30,15 @@ if(cmd != 'unzip' && cmd != 'zipfile' && cmd != 'zipfolder'){
 // unzip
 var unzip = function(path1, path2){
 	try{
+		console.log('unzip ' + path1);
+		console.log('to ' + path2);
+	
+		console.log();
+		console.log('please wait a moment~');
+		
 		qiaoPluginZip.unzip(path1, path2);
 		
+		console.log();
 		console.log('unzip success!');
 	}catch(e){
 		console.log(e);
@@ -41,8 +48,15 @@ var unzip = function(path1, path2){
 // zip file
 var zipFile = async function(path1, path2){
 	try{
+		console.log('zip file ' + path1);
+		console.log('in ' + path2);
+		
+		console.log();
+		console.log('please wait a moment~');
+		
 		var msg = await qiaoPluginZip.zipFileSync(path1, path2);
 	
+		console.log();
 		console.log(msg);
 	}catch(e){
 		console.log(e);
@@ -54,8 +68,15 @@ var zipFile = async function(path1, path2){
 // zip folder
 var zipFolder = async function(path1, path2){
 	try{
+		console.log('zip folder ' + path1);
+		console.log('in ' + path2);
+		
+		console.log();
+		console.log('please wait a moment~');
+	
 		var msg = await qiaoPluginZip.zipFolderSync(path1, path2);
 		
+		console.log();
 		console.log(msg);
 	}catch(e){
 		console.log(e);
