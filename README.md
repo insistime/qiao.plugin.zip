@@ -14,7 +14,7 @@ npm install qiao.plugin.zip
 	
 	var qiaoPluginZip = require('qiao.plugin.zip');
 	
-	function test(){
+	var test = function(){
 		var zipFile 	= 'd:/test1.zip';
 		var destFolder	= 'd:/test2/';
 		
@@ -66,7 +66,7 @@ npm install qiao.plugin.zip
 	
 	var qiaoPluginZip = require('qiao.plugin.zip');
 	
-	function test(){
+	var test = function(){
 		var sourceFile	= 'd:/test.js';
 		var destZip	= 'd:/test22.zip';
 		
@@ -84,7 +84,7 @@ npm install qiao.plugin.zip
 	
 	var qiaoPluginZip = require('qiao.plugin.zip');
 	
-	function test(){
+	var test = function(){
 		var sourceFolder	= 'd:/test/';
 		var destZip		= 'd:/test23.zip';
 		
