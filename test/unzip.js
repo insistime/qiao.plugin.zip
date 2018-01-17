@@ -8,13 +8,12 @@ var test = function(){
 	
 	console.log('unzip ' + zipFile);
 	console.log('to ' + destFolder);
-
 	console.log();
+
 	console.log('please wait a moment...');
+	console.log();
 	
 	qiaoPluginZip.unzip(zipFile, destFolder);
-	
-	console.log();
 	console.log('unzip success!');
 };
 

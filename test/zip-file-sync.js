@@ -9,13 +9,12 @@ var test = async function(){
 
 		console.log('zip file ' + sourceFile);
 		console.log('in ' + destZip);
-		
 		console.log();
+		
 		console.log('please wait a moment...');
+		console.log();
 		
 		var msg = await qiaoPluginZip.zipFileSync(sourceFile, destZip);
-
-		console.log();
 		console.log(msg);
 	}catch(e){
 		console.log(e);

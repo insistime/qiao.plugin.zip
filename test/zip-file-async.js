@@ -8,14 +8,13 @@ var test = function(){
 	
 	console.log('zip file ' + sourceFile);
 	console.log('in ' + destZip);
-	
 	console.log();
+	
 	console.log('please wait a moment...');
+	console.log();
 	
 	qiaoPluginZip.zipFile(sourceFile, destZip, function(err, msg){
 		if(err) throw err;
-		
-		console.log();
 		console.log(msg);
 	});
 };
