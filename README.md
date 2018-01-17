@@ -19,7 +19,7 @@ npm install qiao.plugin.zip
 		var destFolder	= 'd:/test2/';
 		
 		qiaoPluginZip.unzip(zipFile, destFolder);
-	}
+	};
 	
 	test();
 
@@ -75,7 +75,7 @@ npm install qiao.plugin.zip
 			
 			console.log(msg);
 		});
-	}
+	};
 	
 	test();
 
@@ -93,7 +93,7 @@ npm install qiao.plugin.zip
 			
 			console.log(msg);
 		});
-	}
+	};
 	
 	test();
 
