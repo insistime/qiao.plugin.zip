@@ -11,7 +11,7 @@ var test = async function(){
 		console.log('in ' + destZip);
 		
 		console.log();
-		console.log('please wait a moment~');
+		console.log('please wait a moment...');
 		
 		var msg = await qiaoPluginZip.zipFileSync(sourceFile, destZip);
 

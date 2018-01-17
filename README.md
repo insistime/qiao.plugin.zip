@@ -108,6 +108,7 @@ npm install qiao.plugin.zip
 ### 0.0.5.20180117
 1. add log
 2. var test
+3. wait...
 
 ### 0.0.4.20180113
 1. 代码优化

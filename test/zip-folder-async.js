@@ -10,7 +10,7 @@ var test = function(){
 	console.log('in ' + destZip);
 	
 	console.log();
-	console.log('please wait a moment~');
+	console.log('please wait a moment...');
 	
 	qiaoPluginZip.zipFolder(sourceFolder, destZip, function(err, msg){
 		if(err) throw err;

@@ -10,7 +10,7 @@ var test = function(){
 	console.log('to ' + destFolder);
 
 	console.log();
-	console.log('please wait a moment~');
+	console.log('please wait a moment...');
 	
 	qiaoPluginZip.unzip(zipFile, destFolder);
 	
