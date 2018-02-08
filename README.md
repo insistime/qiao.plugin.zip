@@ -105,6 +105,9 @@ npm install qiao.plugin.zip
 	qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 
 # version
+### 0.0.6.20180208
+1. update git url
+
 ### 0.0.5.20180117
 1. add log
 2. var test

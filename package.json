@@ -1,6 +1,6 @@
 {
   "name": "qiao.plugin.zip",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "license": "MIT",
   "description": "zip and unzip by adm-zip",
   "keywords": [
@@ -27,6 +27,6 @@
   "homepage": "http://insistime.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uikoo9/qiao.plugin.zip.git"
+    "url": "git+https://github.com/insistime/qiao.plugin.zip.git"
   }
 }
