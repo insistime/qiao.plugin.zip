@@ -10,101 +10,116 @@ npm install qiao.plugin.zip
 3. zip folder by archiver
 
 # unzip
-	'use strict';
+```javascript
+'use strict';
+
+var qiaoPluginZip = require('qiao.plugin.zip');
+
+var test = function(){
+	var zipFile 	= 'd:/test1.zip';
+	var destFolder	= 'd:/test2/';
 	
-	var qiaoPluginZip = require('qiao.plugin.zip');
-	
-	var test = function(){
-		var zipFile 	= 'd:/test1.zip';
-		var destFolder	= 'd:/test2/';
-		
-		qiaoPluginZip.unzip(zipFile, destFolder);
-	};
-	
-	test();
+	qiaoPluginZip.unzip(zipFile, destFolder);
+};
+
+test();
+```
 
 # zip file sync
-	'use strict';
+```javascript
+'use strict';
+
+var qiaoPluginZip = require('qiao.plugin.zip');
+
+var test = async function(){
+	var sourceFile	= 'd:/test.js';
+	var destZip	= 'd:/test22.zip';
 	
-	var qiaoPluginZip = require('qiao.plugin.zip');
-	
-	var test = async function(){
-		var sourceFile	= 'd:/test.js';
-		var destZip	= 'd:/test22.zip';
-		
-		try{
-			var msg = await qiaoPluginZip.zipFileSync(sourceFile, destZip);
-			console.log(msg);
-		}catch(e){
-			console.log(e);
-		}
-	};
-	
-	test();
+	try{
+		var msg = await qiaoPluginZip.zipFileSync(sourceFile, destZip);
+		console.log(msg);
+	}catch(e){
+		console.log(e);
+	}
+};
+
+test();
+```
 
 # zip folder sync
-	'use strict';
+```javascript
+'use strict';
+
+var qiaoPluginZip = require('qiao.plugin.zip');
+
+var test = async function(){
+	var sourceFolder	= 'd:/test/';
+	var destZip		= 'd:/test24.zip';
 	
-	var qiaoPluginZip = require('qiao.plugin.zip');
-	
-	var test = async function(){
-		var sourceFolder	= 'd:/test/';
-		var destZip		= 'd:/test24.zip';
-		
-		try{
-			var msg = await qiaoPluginZip.zipFolderSync(sourceFolder, destZip);
-			console.log(msg);
-		}catch(e){
-			console.log(e);
-		}
-	};
-	
-	test();
+	try{
+		var msg = await qiaoPluginZip.zipFolderSync(sourceFolder, destZip);
+		console.log(msg);
+	}catch(e){
+		console.log(e);
+	}
+};
+
+test();
+```
 
 # zip file async
-	'use strict';
+```javascript
+'use strict';
+
+var qiaoPluginZip = require('qiao.plugin.zip');
+
+var test = function(){
+	var sourceFile	= 'd:/test.js';
+	var destZip	= 'd:/test22.zip';
 	
-	var qiaoPluginZip = require('qiao.plugin.zip');
-	
-	var test = function(){
-		var sourceFile	= 'd:/test.js';
-		var destZip	= 'd:/test22.zip';
+	qiaoPluginZip.zipFile(sourceFile, destZip, function(err, msg){
+		if(err) throw err;
 		
-		qiaoPluginZip.zipFile(sourceFile, destZip, function(err, msg){
-			if(err) throw err;
-			
-			console.log(msg);
-		});
-	};
-	
-	test();
+		console.log(msg);
+	});
+};
+
+test();
+```
 
 # zip folder async
-	'use strict';
+```javascript
+'use strict';
+
+var qiaoPluginZip = require('qiao.plugin.zip');
+
+var test = function(){
+	var sourceFolder	= 'd:/test/';
+	var destZip		= 'd:/test23.zip';
 	
-	var qiaoPluginZip = require('qiao.plugin.zip');
-	
-	var test = function(){
-		var sourceFolder	= 'd:/test/';
-		var destZip		= 'd:/test23.zip';
+	qiaoPluginZip.zipFolder(sourceFolder, destZip, function(err, msg){
+		if(err) throw err;
 		
-		qiaoPluginZip.zipFolder(sourceFolder, destZip, function(err, msg){
-			if(err) throw err;
-			
-			console.log(msg);
-		});
-	};
-	
-	test();
+		console.log(msg);
+	});
+};
+
+test();
+```
 
 # also in cli
-	npm install -g qiao.plugin.zip
+```shell
+npm install -g qiao.plugin.zip
 
-	qiao-plugin-zip unzip		d:/test.zip	d:/test
-	qiao-plugin-zip zipfile		d:/test.js	d:/test1.zip
-	qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
+qiao-plugin-zip unzip		d:/test.zip	d:/test
+qiao-plugin-zip zipfile		d:/test.js	d:/test1.zip
+qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
+```
 
 # version
+### 0.0.7.20180210
+1. highlight md
+
 ### 0.0.6.20180208
 1. update git url
 
