@@ -117,6 +117,9 @@ qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 ```
 
 # version
+### 0.0.8.20180511
+1. npm audit
+
 ### 0.0.7.20180210
 1. highlight md
 
