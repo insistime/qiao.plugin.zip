@@ -1,6 +1,6 @@
 {
   "name": "qiao.plugin.zip",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "description": "zip and unzip by adm-zip",
   "keywords": [
