@@ -1,15 +1,24 @@
-# qiao.plugin.zip
-nodejs zip and unzip tool
+# urls
+## homepage
+[http://code.insistime.com/qiao.plugin.zip](http://code.insistime.com/qiao.plugin.zip)
 
-# install
+## github
+[https://github.com/insistime/qiao.plugin.zip](https://github.com/insistime/qiao.plugin.zip)
+
+## npm
+[https://www.npmjs.com/package/qiao.plugin.zip](https://www.npmjs.com/package/qiao.plugin.zip)
+
+# started
+## install
 npm install qiao.plugin.zip
 
-# dependencies
+## dependencies
 1. unzip by adm-zip
 2. zip file by archiver
 3. zip folder by archiver
 
-# unzip
+# api
+## unzip
 ```javascript
 'use strict';
 
@@ -25,7 +34,7 @@ var test = function(){
 test();
 ```
 
-# zip file sync
+## zip file sync
 ```javascript
 'use strict';
 
@@ -46,7 +55,7 @@ var test = async function(){
 test();
 ```
 
-# zip folder sync
+## zip folder sync
 ```javascript
 'use strict';
 
@@ -67,7 +76,7 @@ var test = async function(){
 test();
 ```
 
-# zip file async
+## zip file async
 ```javascript
 'use strict';
 
@@ -87,7 +96,7 @@ var test = function(){
 test();
 ```
 
-# zip folder async
+## zip folder async
 ```javascript
 'use strict';
 
@@ -117,33 +126,36 @@ qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 ```
 
 # version
-### 0.0.8.20180511
+## 0.0.9.20180719
+1. modify readme.md
+
+## 0.0.8.20180511
 1. npm audit
 
-### 0.0.7.20180210
+## 0.0.7.20180210
 1. highlight md
 
-### 0.0.6.20180208
+## 0.0.6.20180208
 1. update git url
 
-### 0.0.5.20180117
+## 0.0.5.20180117
 1. add log
 2. var test
 3. wait...
 4. add subdir
 
-### 0.0.4.20180113
+## 0.0.4.20180113
 1. 代码优化
 
-### 0.0.3.20180112
+## 0.0.3.20180112
 1. add qiao-plugin-zip cli
 2. npm publish 0.0.9
 3. crlf --> lf
 
-### 0.0.2.20171229
+## 0.0.2.20171229
 1. 修改readme.md的代码示例
 
-### 0.0.1.20171228
+## 0.0.1.20171228
 1. 初始化项目
 2. unzip by adm-zip
 3. zip file by archiver
