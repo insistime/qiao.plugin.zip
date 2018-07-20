@@ -1,6 +1,6 @@
 # urls
 ## homepage
-[http://code.insistime.com/qiao.plugin.zip](http://code.insistime.com/qiao.plugin.zip)
+[https://code.insistime.com/qiao.plugin.zip](https://code.insistime.com/qiao.plugin.zip)
 
 ## github
 [https://github.com/insistime/qiao.plugin.zip](https://github.com/insistime/qiao.plugin.zip)
@@ -126,6 +126,9 @@ qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 ```
 
 # version
+## 0.1.0.20180720
+1. https homepage
+
 ## 0.0.9.20180719
 1. modify readme.md
 
