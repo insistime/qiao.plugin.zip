@@ -126,6 +126,9 @@ qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 ```
 
 # version
+## 0.1.1.20181012
+1. npm audit
+
 ## 0.1.0.20180720
 1. https homepage
 
