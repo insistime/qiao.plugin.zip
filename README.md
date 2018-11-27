@@ -128,6 +128,7 @@ qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 # version
 ## 0.1.2.20181127
 1. modify method name
+2. add .js
 
 ## 0.1.1.20181012
 1. npm audit
