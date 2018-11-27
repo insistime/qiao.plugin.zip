@@ -34,7 +34,7 @@ var test = function(){
 test();
 ```
 
-## zip file sync
+## zipFileSync
 ```javascript
 'use strict';
 
@@ -55,7 +55,7 @@ var test = async function(){
 test();
 ```
 
-## zip folder sync
+## zipFolderSync
 ```javascript
 'use strict';
 
@@ -76,7 +76,7 @@ var test = async function(){
 test();
 ```
 
-## zip file async
+## zipFile
 ```javascript
 'use strict';
 
@@ -96,7 +96,7 @@ var test = function(){
 test();
 ```
 
-## zip folder async
+## zipFolder
 ```javascript
 'use strict';
 
@@ -126,6 +126,9 @@ qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 ```
 
 # version
+## 0.1.2.20181127
+1. modify method name
+
 ## 0.1.1.20181012
 1. npm audit
 
