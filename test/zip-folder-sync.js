@@ -1,6 +1,6 @@
 'use strict';
 
-var qiaoPluginZip = require('../lib/qiao.plugin.zip');
+var qiaoPluginZip = require('../lib/qiao.plugin.zip.js');
 
 var test = async function(){
 	try{
