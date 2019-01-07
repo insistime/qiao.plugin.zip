@@ -2,7 +2,7 @@
   "name": "qiao.plugin.zip",
   "version": "0.2.7",
   "license": "MIT",
-  "description": "zip and unzip by adm-zip",
+  "description": "nodejs zip and unzip tool",
   "keywords": [
     "zip",
     "unzip",
