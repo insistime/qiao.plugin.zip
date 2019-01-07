@@ -126,6 +126,10 @@ qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 ```
 
 # version
+## 0.1.3.20190107
+1. nodejs zip and unzip tool
+2. update all packages
+
 ## 0.1.2.20181127
 1. modify method name
 2. add .js
