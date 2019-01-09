@@ -2,35 +2,40 @@
 
 'use strict';
 
+// qiao
 var qiao = {};
 qiao.cli = require('qiao.plugin.cli');
 qiao.zip = require('../lib/qiao.plugin.zip');
 
-// args
-var args = process.argv.slice(2);
+// cmd for common
+qiao.cli.cmd
+	.version(require('../package.json').version, '-v, --version')
+	.description('qiao.plugin.zip, nodejs zip and unzip tool')
+	.usage('<command>');
 
-// check args
-if(!args || args.length != 3){
-	console.log('unzip file:');
-	console.log('	qzip unzip zipFile destFolder');
-	console.log('zip file');
-	console.log('	qzip zipfile sourceFile destZip');
-	console.log('zip folder');
-	console.log('	qzip zipfolder sourceFolder destZip');
-	
-	return;
-}
+// cmd for unzip
+qiao.cli.cmd
+	.command('unzip <zipFile> <destFolder>')
+	.alias('un')
+	.action(unzip);
 
-// check cmd
-var cmd = args[0];
-if(cmd != 'unzip' && cmd != 'zipfile' && cmd != 'zipfolder'){
-	console.log('only support unzip, zipfile, zipfolder cmd');
-	
-	return;
-}
+// cmd for zip file
+qiao.cli.cmd
+	.command('zipfile <sourceFile> <destZip>')
+	.alias('fi')
+	.action(zipFile);
+
+// cmd for zip folder
+qiao.cli.cmd
+	.command('zipfolder <sourceFolder> <destZip>')
+	.alias('fo')
+	.action(zipFolder);
+
+// parse
+qiao.cli.cmd.parse(process.argv);
 
 // unzip
-var unzip = function(path1, path2){
+function unzip(path1, path2){
 	try{
 		console.log('unzip ' + path1);
 		console.log('to ' + path2);
@@ -39,7 +44,7 @@ var unzip = function(path1, path2){
 		console.log('please wait a moment...');
 		console.log();
 		
-		qiaoPluginZip.unzip(path1, path2);
+		qiao.zip.unzip(path1, path2);
 		console.log('unzip success!');
 	}catch(e){
 		console.log(e);
@@ -47,7 +52,7 @@ var unzip = function(path1, path2){
 };
 
 // zip file
-var zipFile = async function(path1, path2){
+async function zipFile(path1, path2){
 	try{
 		console.log('zip file ' + path1);
 		console.log('in ' + path2);
@@ -56,7 +61,7 @@ var zipFile = async function(path1, path2){
 		console.log('please wait a moment...');
 		console.log();
 		
-		var msg = await qiaoPluginZip.zipFileSync(path1, path2);
+		var msg = await qiao.zip.zipFileSync(path1, path2);
 		console.log(msg);
 	}catch(e){
 		console.log(e);
@@ -66,7 +71,7 @@ var zipFile = async function(path1, path2){
 };
 
 // zip folder
-var zipFolder = async function(path1, path2){
+async function zipFolder(path1, path2){
 	try{
 		console.log('zip folder ' + path1);
 		console.log('in ' + path2);
@@ -75,34 +80,9 @@ var zipFolder = async function(path1, path2){
 		console.log('please wait a moment...');
 		console.log();
 	
-		var msg = await qiaoPluginZip.zipFolderSync(path1, path2);
+		var msg = await qiao.zip.zipFolderSync(path1, path2);
 		console.log(msg);
 	}catch(e){
 		console.log(e);
 	}
 };
-
-// paths
-var path1 = args[1];
-var path2 = args[2];
-
-// unzip
-if(cmd == 'unzip'){
-	unzip(path1, path2);
-	
-	return;
-}
-
-// zip file
-if(cmd == 'zipfile'){
-	zipFile(path1, path2);
-
-	return;
-}
-
-// zip folder
-if(cmd == 'zipfolder'){
-	zipFolder(path1, path2);
-
-	return;
-}
