@@ -10,11 +10,11 @@ var args = process.argv.slice(2);
 // check args
 if(!args || args.length != 3){
 	console.log('unzip file:');
-	console.log('	qiao-plugin-zip unzip zipFile destFolder');
+	console.log('	qzip unzip zipFile destFolder');
 	console.log('zip file');
-	console.log('	qiao-plugin-zip zipfile sourceFile destZip');
+	console.log('	qzip zipfile sourceFile destZip');
 	console.log('zip folder');
-	console.log('	qiao-plugin-zip zipfolder sourceFolder destZip');
+	console.log('	qzip zipfolder sourceFolder destZip');
 	
 	return;
 }

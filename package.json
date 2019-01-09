@@ -13,7 +13,7 @@
   "main": "index.js",
   "scripts": {},
   "bin": {
-    "qiao-plugin-zip": "./bin/qiao-plugin-zip"
+    "qzip": "./bin/qzip"
   },
   "dependencies": {
     "adm-zip": "^0.4.13",

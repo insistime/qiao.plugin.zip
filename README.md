@@ -120,9 +120,9 @@ test();
 ```shell
 npm install -g qiao.plugin.zip
 
-qiao-plugin-zip unzip		d:/test.zip	d:/test
-qiao-plugin-zip zipfile		d:/test.js	d:/test1.zip
-qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
+qzip unzip		d:/test.zip	d:/test
+qzip zipfile		d:/test.js	d:/test1.zip
+qzip zipfolder	d:/test/	d:/test2.zip
 ```
 
 # version
@@ -162,7 +162,7 @@ qiao-plugin-zip zipfolder	d:/test/	d:/test2.zip
 1. 代码优化
 
 ## 0.0.3.20180112
-1. add qiao-plugin-zip cli
+1. add qzip cli
 2. npm publish 0.0.9
 3. crlf --> lf
 
