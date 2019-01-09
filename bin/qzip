@@ -2,7 +2,9 @@
 
 'use strict';
 
-var qiaoPluginZip = require('../lib/qiao.plugin.zip');
+var qiao = {};
+qiao.cli = require('qiao.plugin.cli');
+qiao.zip = require('../lib/qiao.plugin.zip');
 
 // args
 var args = process.argv.slice(2);
