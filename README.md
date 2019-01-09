@@ -126,6 +126,10 @@ qzip zipfolder	'd:/test/'		'd:/test2.zip'
 ```
 
 # version
+## 0.1.4.20190109
+1. qzip
+2. modify md
+
 ## 0.1.3.20190107
 1. nodejs zip and unzip tool
 2. update all packages
