@@ -129,12 +129,20 @@ or
 qzip un	'd:/test.zip'	'd:/test'
 qzip fi	'd:/test.js'	'd:/test1.zip'
 qzip fo	'd:/test/'	'd:/test2.zip'
+
+or
+
+qzip | qzip -h for help
 ```
 
 # version
 ## 0.1.4.20190109
 1. qzip
 2. modify md
+3. add qiao.plugin.cli
+4. modify qzip
+5. update qiao.plugin.cli@0.0.6
+6. output help
 
 ## 0.1.3.20190107
 1. nodejs zip and unzip tool
