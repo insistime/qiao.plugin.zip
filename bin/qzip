@@ -17,22 +17,32 @@ qiao.cli.cmd
 qiao.cli.cmd
 	.command('unzip <zipFile> <destFolder>')
 	.alias('un')
+	.description('unzip zip file to dest folder')
 	.action(unzip);
 
 // cmd for zip file
 qiao.cli.cmd
 	.command('zipfile <sourceFile> <destZip>')
 	.alias('fi')
+	.description('zip source file to dest zip path')
 	.action(zipFile);
 
 // cmd for zip folder
 qiao.cli.cmd
 	.command('zipfolder <sourceFolder> <destZip>')
 	.alias('fo')
+	.description('zip source folder to dest zip path')
 	.action(zipFolder);
 
 // parse
 qiao.cli.cmd.parse(process.argv);
+
+// output help
+if(!process.argv.slice(2).length){
+	qiao.cli.cmd.outputHelp(function(txt){
+		return qiao.cli.colors.green(txt);
+	});
+}
 
 // unzip
 function unzip(path1, path2){
