@@ -18,7 +18,7 @@
   "dependencies": {
     "adm-zip": "^0.4.13",
     "archiver": "^3.0.0",
-    "qiao.plugin.cli": "0.0.6"
+    "qiao.plugin.cli": "0.0.7"
   },
   "author": {
     "name": "qiaowenbin",
