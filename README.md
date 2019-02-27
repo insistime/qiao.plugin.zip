@@ -142,6 +142,7 @@ qzip | qzip -h for help
 # version
 ## 0.1.5.20190227
 1. zip and unzip use adm-zip
+2. fix chinese bug
 
 ## 0.1.4.20190109
 1. qzip
