@@ -13,10 +13,13 @@
 npm install qiao.plugin.zip
 
 ## dependencies
-1. adm-zip
+1. unzip by adm-zip
+2. zip file by archiver
+3. zip folder by archiver
 
 ## documentation
 1. adm-zip, https://www.npmjs.com/package/adm-zip
+2. archiver, https://www.npmjs.com/package/archiver
 
 # api
 ## unzip
@@ -25,12 +28,54 @@ npm install qiao.plugin.zip
 
 var qiaoPluginZip = require('qiao.plugin.zip');
 
-function test(){
+var test = function(){
 	var zipFile 	= 'd:/test1.zip';
 	var destFolder	= 'd:/test2/';
 	
 	qiaoPluginZip.unzip(zipFile, destFolder);
-}
+};
+
+test();
+```
+
+## zipFileSync
+```javascript
+'use strict';
+
+var qiaoPluginZip = require('qiao.plugin.zip');
+
+var test = async function(){
+	var sourceFile	= 'd:/test.js';
+	var destZip	= 'd:/test22.zip';
+	
+	try{
+		var msg = await qiaoPluginZip.zipFileSync(sourceFile, destZip);
+		console.log(msg);
+	}catch(e){
+		console.log(e);
+	}
+};
+
+test();
+```
+
+## zipFolderSync
+```javascript
+'use strict';
+
+var qiaoPluginZip = require('qiao.plugin.zip');
+
+var test = async function(){
+	var sourceFolder	= 'd:/test/';
+	var destZip		= 'd:/test24.zip';
+	
+	try{
+		var msg = await qiaoPluginZip.zipFolderSync(sourceFolder, destZip);
+		console.log(msg);
+	}catch(e){
+		console.log(e);
+	}
+};
 
 test();
 ```
@@ -41,12 +86,16 @@ test();
 
 var qiaoPluginZip = require('qiao.plugin.zip');
 
-function test(){
+var test = function(){
 	var sourceFile	= 'd:/test.js';
-	var destZip		= 'd:/test01.zip';
+	var destZip	= 'd:/test22.zip';
 	
-	qiaoPluginZip.zipFile(sourceFile, destZip);
-}
+	qiaoPluginZip.zipFile(sourceFile, destZip, function(err, msg){
+		if(err) throw err;
+		
+		console.log(msg);
+	});
+};
 
 test();
 ```
@@ -57,12 +106,16 @@ test();
 
 var qiaoPluginZip = require('qiao.plugin.zip');
 
-function test(){
-	var sourceFolder= 'd:/test/';
-	var destZip		= 'd:/test03.zip';
+var test = function(){
+	var sourceFolder	= 'd:/test/';
+	var destZip		= 'd:/test23.zip';
 	
-	qiaoPluginZip.zipFolder(sourceFolder, destZip);
-}
+	qiaoPluginZip.zipFolder(sourceFolder, destZip, function(err, msg){
+		if(err) throw err;
+		
+		console.log(msg);
+	});
+};
 
 test();
 ```

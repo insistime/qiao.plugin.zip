@@ -5,7 +5,7 @@
 // qiao
 var qiao = {};
 qiao.cli = require('qiao.plugin.cli');
-qiao.zip = require('../lib/qiao.plugin.zip.js');
+qiao.zip = require('../lib/qiao.plugin.zip');
 
 // cmd for common
 qiao.cli.cmd
@@ -71,8 +71,8 @@ async function zipFile(path1, path2){
 		console.log('please wait a moment...');
 		console.log();
 		
-		qiao.zip.zipFile(path1, path2);
-		console.log('zip file success!');
+		var msg = await qiao.zip.zipFileSync(path1, path2);
+		console.log(msg);
 	}catch(e){
 		console.log(e);
 	}
@@ -90,8 +90,8 @@ async function zipFolder(path1, path2){
 		console.log('please wait a moment...');
 		console.log();
 	
-		qiao.zip.zipFolder(path1, path2);
-		console.log('zip folder success!');
+		var msg = await qiao.zip.zipFolderSync(path1, path2);
+		console.log(msg);
 	}catch(e){
 		console.log(e);
 	}
