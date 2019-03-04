@@ -140,6 +140,10 @@ qzip | qzip -h for help
 ```
 
 # version
+## 0.1.6.20190304
+1. add adm-zip demos
+2. add adm-zip md
+
 ## 0.1.5.20190227
 1. zip and unzip use adm-zip
 2. fix chinese bug
