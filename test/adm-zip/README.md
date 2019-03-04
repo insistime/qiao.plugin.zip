@@ -123,7 +123,6 @@ var entry = zip.getEntry('test.js');
 // 获取entry对应的text
 var data = zip.readAsText(entry, 'utf8');
 console.log(data);
-console.log(str);
 ```
 
 ### readAsTextAsync(entry, callback, encoding)
@@ -317,7 +316,7 @@ var zip = new admZip('d:/test.zip');
 zip.extractAllTo('d:/test11', true);
 ```
 
-### writeZip(targetFileName)
+### writeZip(targetFileName, callback)
 ```javascript
 // 引入adm-zip
 var admZip = require('adm-zip');
@@ -325,17 +324,16 @@ var admZip = require('adm-zip');
 // 加载并解析存在的d:/test.zip文件
 var zip = new admZip('d:/test.zip'); 
 
-// 获取d:/test.zip中的test.js这个entry
-var entry = zip.getEntry('test.js');
+// 操作zip，例如删除entry，更新file等
+// handle zip
 
-// 删除entry
-zip.deleteFile(entry);
+// 写入到d:/test.zip中，也可以是其他path
+zip.writeZip('d:/test.zip', function(err, msg){
+	console.log(err, msg);
+});
 
-// 删除entry后必须重写zip一次
-zip.writeZip('d:/test.zip');
-```
-
-### toBuffer(onSuccess, onFail, onItemStart, onItemEnd)
-```javascript
-
+// 如果只传callback，就会写入到打开的zip文件中
+zip.writeZip(function(err, msg){
+	console.log(err, msg);
+});
 ```
