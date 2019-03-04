@@ -19,7 +19,8 @@ npm install qiao.plugin.zip
 
 ## documentation
 1. adm-zip, https://www.npmjs.com/package/adm-zip
-2. archiver, https://www.npmjs.com/package/archiver
+2. adm-zip(中文文档), https://github.com/insistime/qiao.plugin.zip/blob/master/test/adm-zip/README.md
+3. archiver, https://www.npmjs.com/package/archiver
 
 # api
 ## unzip
@@ -143,6 +144,7 @@ qzip | qzip -h for help
 ## 0.1.6.20190304
 1. add adm-zip demos
 2. add adm-zip md
+3. add adm-zip zh md
 
 ## 0.1.5.20190227
 1. zip and unzip use adm-zip
