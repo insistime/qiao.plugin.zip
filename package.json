@@ -6,9 +6,8 @@
   "keywords": [
     "zip",
     "unzip",
-    "folder",
-    "file",
-    "adm-zip"
+    "adm-zip",
+    "archiver"
   ],
   "main": "index.js",
   "scripts": {},
