@@ -141,6 +141,9 @@ qzip | qzip -h for help
 ```
 
 # version
+## 0.1.7.20190306
+1. modify keywords
+
 ## 0.1.6.20190304
 1. add adm-zip demos
 2. add adm-zip md
