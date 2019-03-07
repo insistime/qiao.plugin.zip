@@ -141,6 +141,9 @@ qzip | qzip -h for help
 ```
 
 # version
+## 0.1.8.20190307
+1. fix archiver file name bug
+
 ## 0.1.7.20190306
 1. modify keywords
 
