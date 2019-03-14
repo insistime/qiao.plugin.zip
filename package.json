@@ -1,6 +1,6 @@
 {
   "name": "qiao.plugin.zip",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "license": "MIT",
   "description": "nodejs zip and unzip tool",
   "keywords": [

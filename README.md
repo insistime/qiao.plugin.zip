@@ -141,6 +141,12 @@ qzip | qzip -h for help
 ```
 
 # version
+## 0.1.9.20190314
+1. add qiao.util.file
+2. zip file and folder add mkdir
+3. fix subdir
+4. modify md
+
 ## 0.1.8.20190307
 1. fix archiver file name bug
 
