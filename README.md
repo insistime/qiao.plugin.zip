@@ -125,15 +125,15 @@ test();
 ```shell
 npm install -g qiao.plugin.zip
 
-qzip unzip	'd:/test.zip'	'd:/test'
-qzip zipfile	'd:/test.js'	'd:/test1.zip'
-qzip zipfolder	'd:/test/'	'd:/test2.zip'
+qzip unzip	"d:/test.zip"	"d:/test"
+qzip zipfile	"d:/test.js"	"d:/test1.zip"
+qzip zipfolder	"d:/test"	"d:/test2.zip"
 
 or
 
-qzip un	'd:/test.zip'	'd:/test'
-qzip fi	'd:/test.js'	'd:/test1.zip'
-qzip fo	'd:/test/'	'd:/test2.zip'
+qzip un	"d:/test.zip"	"d:/test"
+qzip fi	"d:/test.js"	"d:/test1.zip"
+qzip fo	"d:/test"	"d:/test2.zip"
 
 or
 
