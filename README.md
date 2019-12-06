@@ -144,6 +144,10 @@ qzip | qzip -h for help
 ```
 
 # version
+## 0.2.0.20191206
+1. add funding
+2. update packages
+
 ## 0.1.9.20190314
 1. add qiao.util.file
 2. zip file and folder add mkdir
