@@ -144,6 +144,9 @@ qzip | qzip -h for help
 ```
 
 # version
+## 0.2.1.20200803
+1. ncu
+
 ## 0.2.0.20191206
 1. add funding
 2. update packages
