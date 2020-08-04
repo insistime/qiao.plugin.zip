@@ -124,26 +124,10 @@ var test = function(){
 test();
 ```
 
-# also in cli
-```shell
-npm install -g qiao.plugin.zip
-
-qzip unzip	"d:/test.zip"	"d:/test"
-qzip zipfile	"d:/test.js"	"d:/test1.zip"
-qzip zipfolder	"d:/test"	"d:/test2.zip"
-
-or
-
-qzip un	"d:/test.zip"	"d:/test"
-qzip fi	"d:/test.js"	"d:/test1.zip"
-qzip fo	"d:/test"	"d:/test2.zip"
-
-or
-
-qzip | qzip -h for help
-```
-
 # version
+## 0.2.2.20200803
+1. del cli
+
 ## 0.2.1.20200803
 1. ncu
 
