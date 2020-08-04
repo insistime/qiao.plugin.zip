@@ -11,14 +11,10 @@
   ],
   "main": "index.js",
   "scripts": {},
-  "bin": {
-    "qzip": "./bin/qzip"
-  },
   "dependencies": {
     "adm-zip": "^0.4.16",
     "archiver": "^5.0.0",
     "iconv-lite": "^0.6.2",
-    "qiao.plugin.cli": "0.1.0",
     "qiao.util.file": "^0.1.2"
   },
   "author": {
